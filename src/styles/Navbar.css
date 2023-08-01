@@ -1,9 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/nugia-vintage');
 
-h3{
-  font-size: xx-large;
-  font-family: 'Nugia Vintage', sans-serif;
-  margin: 25px;
+.Logo{
+  width: 200;
 }
 
 .Navbar {

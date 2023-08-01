@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import Logo from './assets/Logo.png'
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const Navbar = () => {
             <header>
                 <nav className="Navbar">
                     <div className="logo">
-                        <h3>Wok&Do</h3>
+                        <img src={Logo} alt="logo"  className='Logo'/>
                     </div>
                     <ul className={`navlinks ${menuOpen ? 'nav-active' : ''}`}>
                         <li><a href='#'>Home</a></li>
