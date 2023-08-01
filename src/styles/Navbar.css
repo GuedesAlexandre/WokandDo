@@ -11,6 +11,9 @@
   top: 0;
   position: sticky;
 }
+.menu-icon{
+  margin-top: -40px;
+}
 
 .navlinks {
   list-style: none;
@@ -20,6 +23,7 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+  margin-top:-40px;
 }
 
 .navlinks li {
