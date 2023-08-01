@@ -1,15 +1,13 @@
-
-
-
+import './styles/App.css';
+import Navbar from "./Navbar";
+import'./styles/Navbar.css'
 
 function App() {
-  
-
   return (
-    <div>
-      <span>Hello World</span>
-    </div>
-  )
+   <div>
+      <Navbar/>
+   </div>
+  );
 }
 
-export default App
+export default App;

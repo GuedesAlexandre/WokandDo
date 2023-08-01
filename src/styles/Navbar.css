@@ -1,0 +1,129 @@
+@import url('https://fonts.cdnfonts.com/css/nugia-vintage');
+
+h3{
+  font-size: xx-large;
+  font-family: 'Nugia Vintage', sans-serif;
+  margin: 25px;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navlinks li::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.navlinks li:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: #fad643;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10000; /* Augmenter l'index z pour que la croix soit au-dessus de tout le reste */
+}
+
+.close-menu-btn svg {
+  fill: black;
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba( 25, 12, 1, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    z-index: 9999;
+    transform: translateX(100%);
+    animation: openMenu 0.3s forwards;
+  }
+
+  @keyframes openMenu {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .nav-active li {
+    margin: 10px;
+  }
+}
+.logoalma{
+  width: 170px;
+  height:auto;
+}
