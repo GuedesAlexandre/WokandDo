@@ -1,0 +1,70 @@
+.red-box{
+    border-radius: 15px;
+background: rgba(255, 183, 3, 0.62);
+    width:100%;
+  
+    height: 833px;
+    flex-shrink: 0;
+    
+    margin-top:-30px;
+    z-index:2;
+    display:flex;
+    place-content: center;
+ 
+}
+.red-box-int{
+    display:flex;
+    justify-content: space-between!important;
+    margin:25px;
+    align-items: center;
+
+}
+h1{
+    font-size:50px
+}
+.title-landing{
+    width:500px;
+    margin-right: 500px;
+    
+}
+
+.button-container{
+    display: flex;
+    gap:20px;
+   
+}
+.btn-1{
+    width: 183px;
+height: 50px;
+flex-shrink: 0;
+border-radius: 9px;
+background: #F96A6A;
+color:white;
+border-style: none;
+font-size:20px;
+font-family: 'Comic sans ms';
+}
+.btn-1:hover{
+    background:black;
+    cursor:pointer;
+    color:white;
+    transition: background 0.5s ease-in-out;
+}
+
+.btn-2{
+    width: 183px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: #ffffff;
+    color:rgb(0, 0, 0);
+    border-style: none;
+    font-size:20px;
+    font-family: 'Poppins';
+}
+.btn-2:hover{
+    background:#F96A6A ;
+    cursor:pointer;
+    color:white;
+    transition: background 0.5s ease-in-out;
+}
